@@ -342,7 +342,7 @@ export default function App() {
       console.error('Error clearing preferences:', error);
     }
   };
-
+  
   const renderTimetable = () => {
     const timetable = getCurrentTimetable();
     if (!timetable) {
@@ -358,6 +358,8 @@ export default function App() {
         </View>
       );
     }
+    
+    
 
     const daySchedule = timetable[currentDay];
     if (!daySchedule) {
@@ -529,6 +531,48 @@ export default function App() {
 
       <ScrollView style={styles.content}>
         {/* Controls */}
+        {/* Day Navigation */}
+        <View style={[styles.dayNavigation, isDark && styles.darkCard]}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            <View style={styles.dayTabs}>
+              {DAYS.map((day) => {
+                const isActive = currentDay === day;
+                return (
+                  <TouchableOpacity
+                    key={day}
+                    style={[
+                      styles.dayTab,
+                      isActive && styles.activeDayTab,
+                      isDark && styles.darkDayTab,
+                      isActive && isDark && styles.darkActiveDayTab, // Use dark teal highlight
+                    ]}
+                    onPress={() => setCurrentDay(day)}
+                  >
+                    <Text
+                      style={[
+                        styles.dayTabText,
+                        isActive && styles.activeDayTabText,
+                        isDark && styles.darkText,
+                        isActive && { color: 'white' },
+                      ]}
+                    >
+                      {day.slice(0, 3)}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
+          </ScrollView>
+        </View>
+                {/* Timetable */}
+        {selectedBranch && (
+          <View style={styles.timetableSection}>
+            <Text style={[styles.timetableTitle, isDark && styles.darkTealText]}>
+              {currentDay} Timetable
+            </Text>
+            {renderTimetable()}
+          </View>
+        )}
         <View style={[styles.controlsCard, isDark && styles.darkCard]}>
           <View style={styles.controlRow}>
             <Text style={[styles.label, isDark && styles.darkText]}>SELECT BRANCH</Text>
@@ -601,50 +645,9 @@ export default function App() {
             </TouchableOpacity>
           </View>
         </View>
+        
 
-        {/* Day Navigation */}
-        <View style={[styles.dayNavigation, isDark && styles.darkCard]}>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            <View style={styles.dayTabs}>
-              {DAYS.map((day) => {
-                const isActive = currentDay === day;
-                return (
-                  <TouchableOpacity
-                    key={day}
-                    style={[
-                      styles.dayTab,
-                      isActive && styles.activeDayTab,
-                      isDark && styles.darkDayTab,
-                      isActive && isDark && styles.darkActiveDayTab, // Use dark teal highlight
-                    ]}
-                    onPress={() => setCurrentDay(day)}
-                  >
-                    <Text
-                      style={[
-                        styles.dayTabText,
-                        isActive && styles.activeDayTabText,
-                        isDark && styles.darkText,
-                        isActive && { color: 'white' },
-                      ]}
-                    >
-                      {day.slice(0, 3)}
-                    </Text>
-                  </TouchableOpacity>
-                );
-              })}
-            </View>
-          </ScrollView>
-        </View>
 
-        {/* Timetable */}
-        {selectedBranch && (
-          <View style={styles.timetableSection}>
-            <Text style={[styles.timetableTitle, isDark && styles.darkTealText]}>
-              {currentDay} Timetable
-            </Text>
-            {renderTimetable()}
-          </View>
-        )}
       </ScrollView>
 
       {/* Footer */}
