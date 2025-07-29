@@ -119,52 +119,52 @@ const TIMETABLE_DATA = {
   etc: {
     'Group-1': {
       Monday:    ['PS', 'EMT', 'EC', 'SS', 'SNTW', 'X', 'X', 'X', 'X'],
-      Tuesday:   ['X', 'PS', 'EC', 'ST', 'X', 'X', 'EC LAB', 'EC LAB', 'X', 'X'],
+      Tuesday:   ['X', 'PS', 'EC', 'ST', 'X', 'X', 'EC_LAB', 'EC_LAB', 'X', 'X'],
       Wednesday: ['X', 'EC', 'SS', 'SP_LAB', 'SP_LAB', 'X', 'PS', 'ST', 'X', 'X'],
       Thursday:  ['PS', 'SS', 'EC', 'EMT', 'X', 'X', 'VE', 'VE', 'X', 'X'],
-      Friday:    ['EC LAB', 'EC LAB', 'SNTW', 'ST', 'EMT', 'X', 'VE', 'VE', 'X', 'X', 'X']
+      Friday:    ['EC_LAB', 'EC_LAB', 'SNTW', 'ST', 'EMT', 'X', 'VE', 'VE', 'X', 'X', 'X']
     },
     'Group-2': {
       Monday:    ['EMT', 'EC', 'ST', 'PS', 'X', 'X', 'SP_LAB', 'SP_LAB', 'X', 'X'],
-      Tuesday:   ['EC LAB', 'EC LAB', 'EC', 'SS', 'X', 'X', 'X', 'X', 'X', 'X'],
+      Tuesday:   ['EC_LAB', 'EC_LAB', 'EC', 'SS', 'X', 'X', 'X', 'X', 'X', 'X'],
       Wednesday: ['PS', 'EC', 'SS', 'ST', 'SNTW', 'X', 'X', 'X', 'X'],
       Thursday:  ['EMT', 'EC', 'ST', 'SS', 'PS', 'X', 'VE', 'VE', 'X', 'X'],
-      Friday:    ['PS', 'EMT', 'SNTW', 'EC LAB', 'EC LAB', 'X', 'VE', 'VE', 'X', 'X', 'X']
+      Friday:    ['PS', 'EMT', 'SNTW', 'EC_LAB', 'EC_LAB', 'X', 'VE', 'VE', 'X', 'X', 'X']
     },
     'Group-3': {
-      Monday:    ['PS', 'ST', 'EMT', 'EC', 'X', 'X', 'EC LAB', 'EC LAB', 'X', 'X'],
+      Monday:    ['PS', 'ST', 'EMT', 'EC', 'X', 'X', 'EC_LAB', 'EC_LAB', 'X', 'X'],
       Tuesday:   ['SP_LAB', 'SP_LAB', 'ST', 'EC', 'SS', 'X', 'X', 'X', 'X', 'X'],
-      Wednesday: ['X', 'ST', 'SS', 'EC LAB', 'EC LAB', 'X', 'PS', 'EMT', 'X', 'X'],
+      Wednesday: ['X', 'ST', 'SS', 'EC_LAB', 'EC_LAB', 'X', 'PS', 'EMT', 'X', 'X'],
       Thursday:  ['PS', 'SNTW', 'SS', 'EC', 'X', 'X', 'VE', 'VE', 'X', 'X'],
       Friday:    ['EMT', 'EC', 'PS', 'SNTW', 'X', 'X', 'VE', 'VE', 'X', 'X']
     }
   },
   vlsidt: {
     default: {
-      Monday:    ['EC LAB', 'EC LAB', 'SS', 'ADE', 'X', 'X', 'SNTW', 'PS', 'X', 'X'],
+      Monday:    ['EC_LAB', 'EC_LAB', 'SS', 'ADE', 'X', 'X', 'SNTW', 'PS', 'X', 'X'],
       Tuesday:   ['ADE', 'CDSA', 'SS', 'PS', 'X', 'X', 'X', 'X', 'X', 'X'],
-      Wednesday: ['SS', 'CDSA', 'MF', 'PS', 'X', 'X', 'EC LAB', 'EC LAB', 'X', 'X'],
+      Wednesday: ['SS', 'CDSA', 'MF', 'PS', 'X', 'X', 'EC_LAB', 'EC_LAB', 'X', 'X'],
       Thursday:  ['CDSA', 'MF', 'ADE', 'SNTW', 'X', 'X', 'VE', 'VE', 'X', 'X'],
-      Friday:    ['PS', 'ADE', 'MF', 'DS LAB', 'DS LAB', 'X', 'VE', 'VE', 'X', 'X', 'X']
+      Friday:    ['PS', 'ADE', 'MF', 'DS_LAB', 'DS_LAB', 'X', 'VE', 'VE', 'X', 'X', 'X']
     }
   },
   ecse: {
     'Group-1': {
       Monday:    ['PS', 'SS', 'EC', 'CSA', 'X', 'X', 'DS', 'SNTW', 'X', 'X'],
-      Tuesday:   ['PS', 'EC', 'DS', 'DS LAB', 'DS LAB', 'X', 'X', 'X', 'X', 'X'],
+      Tuesday:   ['PS', 'EC', 'DS', 'DS_LAB', 'DS_LAB', 'X', 'X', 'X', 'X', 'X'],
       Wednesday: ['DS', 'PS', 'EC', 'SS', 'X', 'X', 'X', 'X', 'X', 'X'],
       Thursday:  ['SP_LAB', 'SP_LAB', 'EC', 'CSA', 'X', 'X', 'VE', 'VE', 'X', 'X'],
       Friday:    ['DS', 'CSA', 'SS', 'SNTW', 'PS', 'X', 'VE', 'VE', 'X', 'X']
     },
     'Group-2': {
-      Monday:    ['DS LAB', 'DS LAB', 'EC', 'PS', 'X', 'X', 'CSA', 'DS', 'X', 'X'],
+      Monday:    ['DS_LAB', 'DS_LAB', 'EC', 'PS', 'X', 'X', 'CSA', 'DS', 'X', 'X'],
       Tuesday:   ['CSA', 'PS', 'SS', 'DS', 'X', 'X', 'X', 'X', 'X', 'X'],
       Wednesday: ['CSA', 'SS', 'DS', 'EC', 'X', 'X', 'X', 'X', 'X', 'X'],
       Thursday:  ['SNTW', 'SS', 'PS', 'EC', 'X', 'X', 'VE', 'VE', 'X', 'X'],
       Friday:    ['PS', 'EC', 'DS', 'SNTW', 'X', 'X', 'VE', 'VE', 'X', 'X']
     },
     'Group-3': {
-      Monday:    ['CSA', 'PS', 'DS LAB', 'DS LAB', 'X', 'X', 'X', 'X', 'X', 'X'],
+      Monday:    ['CSA', 'PS', 'DS_LAB', 'DS_LAB', 'X', 'X', 'X', 'X', 'X', 'X'],
       Tuesday:   ['DS', 'SS', 'SNTW', 'EC', 'PS', 'X', 'X', 'X', 'X', 'X'],
       Wednesday: ['DS', 'EC', 'SS', 'PS', 'X', 'X', 'X', 'X', 'X', 'X'],
       Thursday:  ['CSA', 'DS', 'SNTW', 'EC', 'X', 'X', 'VE', 'VE', 'X', 'X'],
@@ -173,18 +173,18 @@ const TIMETABLE_DATA = {
     'Group-4': {
       Monday:    ['EC', 'SS', 'PS', 'SNTW', 'X', 'X', 'X', 'X', 'X', 'X'],
       Tuesday:   ['SS', 'PS', 'DS', 'EC', 'CSA', 'X', 'X', 'X', 'X', 'X'],
-      Wednesday: ['DS LAB', 'DS LAB', 'SS', 'SNTW', 'DS', 'X', 'X', 'X', 'X', 'X'],
+      Wednesday: ['DS_LAB', 'DS_LAB', 'SS', 'SNTW', 'DS', 'X', 'X', 'X', 'X', 'X'],
       Thursday:  ['PS', 'CSA', 'DS', 'SP_LAB', 'SP_LAB', 'X', 'VE', 'VE', 'X', 'X'],
       Friday:    ['CSA', 'DS', 'EC', 'PS', 'X', 'X', 'VE', 'VE', 'X', 'X']
     }
   },
   ee: {
     default: {
-      Monday:    ['EC LAB', 'EC LAB', 'SS', 'PS', 'X', 'X', 'X', 'X', 'X'],
+      Monday:    ['EC_LAB', 'EC_LAB', 'SS', 'PS', 'X', 'X', 'X', 'X', 'X'],
       Tuesday:   ['CDSA', 'SS', 'EC', 'EC', 'PS (CL-06)', 'NT (CL-06)', 'X', 'X', 'X'],
-      Wednesday: ['SS', 'CDSA', 'EC', 'NT', 'X', 'EC LAB', 'EC LAB', 'X', 'X'],
+      Wednesday: ['SS', 'CDSA', 'EC', 'NT', 'X', 'EC_LAB', 'EC_LAB', 'X', 'X'],
       Thursday:  ['CDSA', 'PS', 'SNTW', 'EC', 'X', 'VE', 'VE', 'X', 'X'],
-      Friday:    ['PS', 'NT', 'SNTW', 'DS LAB', 'DS LAB', 'X', 'VE', 'VE', 'X']
+      Friday:    ['PS', 'NT', 'SNTW', 'DS_LAB', 'DS_LAB', 'X', 'VE', 'VE', 'X']
     }
   }
 };
@@ -734,12 +734,12 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    padding: 24,
+    padding: 17,
   },
     controlsCard: {
     backgroundColor: 'white',
     borderRadius: 12,
-    padding: 24,
+    padding: 33,
     marginBottom: 24,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -813,7 +813,7 @@ const styles = StyleSheet.create({
   dayNavigation: {
     backgroundColor: 'white',
     borderRadius: 12,
-    padding: 8,
+    padding: 6,
     marginBottom: 24,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -827,9 +827,9 @@ const styles = StyleSheet.create({
   },
   dayTab: {
     paddingVertical: 12,
-    paddingHorizontal: 12,
+    paddingHorizontal: 10,
     borderRadius: 8,
-    minWidth: 20,
+    minWidth: 10,
     alignItems: 'center',
   },
   darkDayTab: {
