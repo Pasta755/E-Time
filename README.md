@@ -1,2 +1,3 @@
 # E-Time
-Time table app for 3rd Sem
+Time table app for electronics 3rd sem KIIT students
+
