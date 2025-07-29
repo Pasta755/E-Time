@@ -676,7 +676,7 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: '#14b8a6',
-    paddingVertical: 25,
+    paddingVertical: 18,
     paddingHorizontal: 24,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
@@ -736,7 +736,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 24,
   },
-  controlsCard: {
+    controlsCard: {
     backgroundColor: 'white',
     borderRadius: 12,
     padding: 24,
